@@ -122,6 +122,16 @@ h4. A "normal" commit command
 
 @git commit -a -v@
 
+h4. Add file in last commit
+
+@git add ...
+@git commit --amend
+
+h4. Undo amended commit
+
+@git reset --soft HEAD@{1}
+@git commit -C HEAD@{1}
+
 h4. Viewing a log of your commits
 
 @git log@
